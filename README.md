@@ -1,4 +1,4 @@
-# Ansibles samples
+# Ansible samples
 
 Samples of Ansible code.
 
