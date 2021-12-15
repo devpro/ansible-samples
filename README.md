@@ -4,4 +4,4 @@ Samples of Ansible code.
 
 ## Tutorials
 
-* [Hello world](./docs/01-hello-world.md)
+* [01. Quick tour](./docs/01-quick-tour.md)

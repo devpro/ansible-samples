@@ -9,7 +9,7 @@
 
     - name: Copy index page
       copy:
-        src: ../web/01-index.html
+        src: ../resources/web/01-index.html
         dest: /var/www/html/index.html
         owner: www-data
         group: www-data

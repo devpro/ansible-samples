@@ -1,0 +1,19 @@
+---
+- hosts: all
+  become: true
+  tasks:
+    - name: Remove Packages
+      apt: name={{ item }} update_cache=yes state=absent
+      loop: ["nginx", "vim"]
+      tags: ["setup"]
+
+    - name: Stop Nginx
+      service:
+        name: nginx
+        state: stopped
+
+    - name: Delete content & directory
+      file:
+        state: absent
+        path: /var/www/html/index.html
+      tags: ["update", "sync"]
